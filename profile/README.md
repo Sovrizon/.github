@@ -1,3 +1,28 @@
-# Sovrizon - Projet 3A
+# Sovrizon – Projet 3A
 
-Projet de système décentralisé de gestion des données personnelles.
+Sovrizon est un projet de système décentralisé de gestion des données personnelles, réalisé dans le cadre de notre 3e année à Centrale Lyon.
+
+## Dépôts principaux
+
+- [**secugram**](https://github.com/Sovrizon/secugram)  
+  Back-end de l’application de partage d’images chiffrées. Il gère l’inscription, l’authentification, la publication d’images, la gestion de leur visibilité (publique/privée), et l’accès sécurisé via des clés de chiffrement.
+
+- [**extension**](https://github.com/Sovrizon/extension)  
+  Extension Chrome permettant aux utilisateurs de visualiser les images chiffrées, en interagissant avec un tiers de confiance pour récupérer les clés nécessaires à leur déchiffrement.
+
+- [**tiers-de-confiance**](https://github.com/Sovrizon/tiers-de-confiance)  
+  Serveur agissant comme tiers de confiance pour la génération, le stockage et la délivrance des clés de chiffrement. Utilise Vault de HashiCorp pour garantir la sécurité et la traçabilité.
+
+## Objectifs du projet
+
+- Garantir aux utilisateurs un contrôle total sur leurs données numériques.
+- Assurer la confidentialité des contenus même sur des plateformes publiques.
+- Expérimenter des outils de cybersécurité modernes comme Vault, le chiffrement asymétrique, et l’authentification décentralisée.
+
+## Technologies
+
+- Python, FastAPI, MongoDB, JavaScript, Vault, Streamlit, Chrome Extension API.
+
+---
+
+© 2025 Sovrizon – Tous droits réservés.
