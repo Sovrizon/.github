@@ -5,7 +5,7 @@ Sovrizon est un projet de système décentralisé de gestion des données person
 ## Dépôts principaux
 
 - [**secugram**](https://github.com/Sovrizon/secugram)  
-  Back-end de l’application de partage d’images chiffrées. Il gère l’inscription, l’authentification, la publication d’images, la gestion de leur visibilité (publique/privée), et l’accès sécurisé via des clés de chiffrement.
+  Application web (front-end et back-end) simplifiée de partage d’images. Elle permet l’inscription, la connexion, la publication d’images avec descriptions. Les images sont chiffrées côté serveur et protégées via un système de clés.
 
 - [**extension**](https://github.com/Sovrizon/extension)  
   Extension Chrome permettant aux utilisateurs de visualiser les images chiffrées, en interagissant avec un tiers de confiance pour récupérer les clés nécessaires à leur déchiffrement.
