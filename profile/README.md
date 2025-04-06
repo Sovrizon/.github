@@ -1,27 +1,69 @@
-# Sovrizon – Projet 3A
+# 📸 Secugram — Application Web
 
-Sovrizon est un projet de système décentralisé de gestion des données personnelles, réalisé dans le cadre de notre 3e année à Centrale Lyon.
-
-## Dépôts principaux
-
-- [**secugram**](https://github.com/Sovrizon/secugram)  
-  Application web (front-end et back-end) simplifiée de partage d’images. Elle permet l’inscription, la connexion, la publication d’images avec descriptions. Les images sont chiffrées côté serveur et protégées via un système de clés.
-
-- [**extension**](https://github.com/Sovrizon/extension)  
-  Extension Chrome permettant aux utilisateurs de visualiser les images chiffrées, en interagissant avec un tiers de confiance pour récupérer les clés nécessaires à leur déchiffrement.
-
-- [**tiers-de-confiance**](https://github.com/Sovrizon/tiers-de-confiance)  
-  Serveur agissant comme tiers de confiance pour la génération, le stockage et la délivrance des clés de chiffrement.
-
-## Objectifs du projet
-
-- Garantir aux utilisateurs un contrôle total sur leurs données numériques.
-- Assurer la confidentialité des contenus même sur des plateformes publiques.
-
-## Technologies
-
-- Python, FastAPI, MongoDB, JavaScript, React, Vue.
+Secugram est une application web simplifiée de partage d'images.  
+Elle permet à des utilisateurs inscrits de publier des images avec descriptions.  
+Les images sont **chiffrées côté serveur** et protégées via un système de clés sécurisé, en lien avec un tiers de confiance.
 
 ---
 
-© 2025 Sovrizon – Tous droits réservés.
+## 🧱 Technologies utilisées
+
+- **Frontend** : React (Vite)
+- **Backend** : FastAPI
+- **Base de données** : MongoDB
+- **Chiffrement** : géré côté serveur (FastAPI) avec vérification via un tiers de confiance
+
+---
+
+## ✨ Fonctionnalités principales
+
+- 🧾 Inscription / Connexion
+- 🖼️ Publication d'images avec description
+- 🔐 Chiffrement côté serveur
+- 🔎 Visualisation conditionnelle des images via une extension Chrome
+- 🔗 API sécurisée interconnectée avec le serveur de confiance
+
+---
+
+## 🚀 Installation locale
+
+### 1. Cloner le dépôt
+
+git clone https://github.com/ton-user/secugram.git
+cd secugram
+
+### 2. Lancer le backend
+
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload --port 8000
+
+⚠️ Assurez-vous que MongoDB est accessible (en local ou via un URI distant).
+
+### 3. Lancer le frontend
+
+cd frontend
+npm install
+npm run dev
+
+Par défaut disponible sur http://localhost:5173
+
+## 🧩 Dépendance externe
+
+Cette application interagit avec un **tiers de confiance** pour :
+* Générer les clés de chiffrement
+* Gérer les tokens d'accès
+* Valider les droits de lecture
+
+Voir le dépôt tiers-de-confiance
+
+## 📂 Structure du dépôt
+
+secugram/
+├── backend/         # FastAPI (routes, auth, BDD, chiffrement)
+├── frontend/        # React (UI, login, publication, affichage)
+└── README.md
+
+## 📄 Licence
+
+Projet développé par Loqmen ANANI dans le cadre d'un projet étudiant. Licence : MIT
