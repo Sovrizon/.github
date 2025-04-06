@@ -29,8 +29,10 @@ Les images sont **chiffrées côté serveur** et protégées via un système de 
 
 ### 1. Cloner le dépôt
 
+`
 git clone https://github.com/ton-user/secugram.git
 cd secugram
+`
 
 ### 2. Lancer le backend
 
