@@ -5,18 +5,22 @@ Sovrizon est un projet de système décentralisé de gestion des données person
 ## Dépôts principaux
 
 - [**secugram**](https://github.com/Sovrizon/secugram)  
- Application web (front-end et back-end) simplifiée de partage d'images. Elle permet l'inscription, la connexion, la publication d'images avec descriptions. Les images sont chiffrées côté serveur et protégées via un système de clés.
+  Application web (front-end et back-end) simplifiée de partage d'images. Elle permet l'inscription, la connexion, la publication d'images avec descriptions. Les images sont chiffrées côté serveur et protégées via un système de clés.
 
 - [**extension**](https://github.com/Sovrizon/extension)  
- Extension Chrome permettant aux utilisateurs de visualiser les images chiffrées, en interagissant avec un tiers de confiance pour récupérer les clés nécessaires à leur déchiffrement.
+  Extension Chrome permettant aux utilisateurs de visualiser les images chiffrées, en interagissant avec un tiers de confiance pour récupérer les clés nécessaires à leur déchiffrement.
 
 - [**tiers-de-confiance**](https://github.com/Sovrizon/tiers-de-confiance)  
- Serveur agissant comme tiers de confiance pour la génération, le stockage et la délivrance des clés de chiffrement.
+  Serveur agissant comme tiers de confiance pour la génération, le stockage et la délivrance des clés de chiffrement.
 
 ## Objectifs du projet
 
 - Garantir aux utilisateurs un contrôle total sur leurs données numériques.
 - Assurer la confidentialité des contenus même sur des plateformes publiques.
+
+## Prototype en ligne
+
+➡️ Le prototype est consultable ici : [https://secugram-82493.web.app/](https://secugram-82493.web.app/)
 
 ## Technologies
 
@@ -24,8 +28,8 @@ Sovrizon est un projet de système décentralisé de gestion des données person
 
 ## Équipe
 
-- Rémy GASMI
-- Simon VINCENT
+- Rémy GASMI  
+- Simon VINCENT  
 - Loqmen ANANI
 
 ---
